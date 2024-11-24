@@ -61,6 +61,7 @@ document.getElementById("next-button").addEventListener("click", showNextQuestio
 
 function startGame() {
     currentQuestion = 0;
+    currentAnswerIndex = 4;
     document.getElementById("start-button").style.display = "none";
     document.getElementById("reveal-button").style.display = "inline";
     document.getElementById("next-button").style.display = "none";
@@ -101,6 +102,7 @@ function showNextQuestion() {
         endGame();
         return;
     }
+    currentAnswerIndex = 4;
     document.getElementById("reveal-button").style.display = "inline";
     document.getElementById("next-button").style.display = "none";
     showQuestion();
